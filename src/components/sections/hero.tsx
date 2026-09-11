@@ -20,21 +20,21 @@ export default function Hero() {
             className="lg:col-span-7 space-y-6 text-left"
           >
             {/* Positivus Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#B9FF66] border-2 border-[#191A23] font-heading text-xs font-black uppercase tracking-wider text-[#191A23] shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#FF9900] border border-[#E5E7EB] font-heading text-xs font-black uppercase tracking-wider text-[#131A22] shadow-xs">
               <Sparkles size={13} />
               Amazon & Flipkart Marketplace Growth
             </div>
 
             {/* H1 Headline */}
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#191A23] leading-none">
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#131A22] leading-none">
               Grow Your Brand.{' '}
-              <span className="positivus-label">
+              <span className="brand-label">
                 Scale Your Marketplace.
               </span>
             </h1>
 
             {/* Body Copy */}
-            <p className="text-[#666666] text-base sm:text-lg md:text-xl font-medium max-w-xl leading-relaxed">
+            <p className="text-[#5F6368] text-base sm:text-lg md:text-xl font-medium max-w-xl leading-relaxed">
               Sycamore East SPN powers D2C brand revenue across Amazon and Flipkart through data-driven account management, precision SEO, algorithmic PPC, and dedicated operations support.
             </p>
 
@@ -49,10 +49,10 @@ export default function Hero() {
             </div>
             
             {/* Trust statement */}
-            <div className="pt-6 border-t-2 border-[#191A23]/10 mt-8 flex flex-wrap items-center gap-6 text-xs text-[#666666] font-bold">
-              <span className="flex items-center gap-1.5 text-[#191A23]">⚡ Amazon SPN Certified Specialists</span>
-              <span className="flex items-center gap-1.5 text-[#191A23]">🛡️ 100% Policy-Safe Account Health</span>
-              <span className="flex items-center gap-1.5 text-[#191A23]">📈 Avg. 42% ROI Improvement</span>
+            <div className="pt-6 border-t-2 border-[#E5E7EB]/10 mt-8 flex flex-wrap items-center gap-6 text-xs text-[#5F6368] font-bold">
+              <span className="flex items-center gap-1.5 text-[#131A22]">⚡ Amazon SPN Certified Specialists</span>
+              <span className="flex items-center gap-1.5 text-[#131A22]">🛡️ 100% Policy-Safe Account Health</span>
+              <span className="flex items-center gap-1.5 text-[#131A22]">📈 Avg. 42% ROI Improvement</span>
             </div>
 
           </motion.div>

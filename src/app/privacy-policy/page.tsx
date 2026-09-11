@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <article className="pt-28 pb-20 w-full bg-white text-[#191A23]">
+    <article className="pt-28 pb-20 w-full bg-white text-[#131A22]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
         <Breadcrumbs items={[{ label: 'Privacy Policy' }]} />
       </div>
@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
         <SectionHeading title="Privacy Policy" description="Last updated: January 2026" />
 
-        <Card variant="white" className="space-y-6 text-[#191A23] font-medium leading-relaxed text-sm sm:text-base">
+        <Card variant="white" className="space-y-6 text-[#131A22] font-medium leading-relaxed text-sm sm:text-base">
           <h2 className="font-heading font-extrabold text-xl">1. Information We Collect</h2>
           <p>
             At Sycamore East SPN, we collect information you provide directly to us when requesting a free marketplace audit, booking a consultation, or contacting our team. This includes your name, email address, phone number, company name, and marketplace store details.

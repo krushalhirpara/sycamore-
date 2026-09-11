@@ -54,7 +54,7 @@ export default function RootLayout({
       className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-white text-[#191A23] antialiased selection:bg-[#B9FF66] selection:text-[#191A23]" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col bg-white text-[#131A22] antialiased selection:bg-[#FF9900] selection:text-[#131A22]" suppressHydrationWarning>
         <CustomCursor />
         <PageTransition>
           <Header />

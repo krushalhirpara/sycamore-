@@ -20,7 +20,7 @@ export default function Testimonials() {
   const active = testimonialsData[activeIndex];
 
   return (
-    <section className="bg-[#F3F3F3] py-20 md:py-28 border-y-2 border-[#191A23] relative">
+    <section className="bg-[#F7F7F7] py-20 md:py-28 border-y-2 border-[#E5E7EB] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -29,8 +29,8 @@ export default function Testimonials() {
           description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More About Our Marketplace Growth Services."
         />
 
-        {/* Positivus Dark Testimonials Block */}
-        <div className="bg-[#191A23] text-white rounded-[36px] p-8 md:p-14 border-2 border-[#191A23] shadow-positivus relative overflow-hidden">
+        {/* Testimonials White Card Block */}
+        <div className="bg-white text-[#131A22] rounded-[36px] p-8 md:p-14 border border-[#E5E7EB] shadow-premium relative overflow-hidden">
           
           <AnimatePresence mode="wait">
             <motion.div
@@ -42,26 +42,26 @@ export default function Testimonials() {
               className="max-w-3xl mx-auto space-y-8"
             >
               {/* Quote Mark Icon */}
-              <div className="w-12 h-12 rounded-xl bg-[#B9FF66] border-2 border-[#191A23] flex items-center justify-center text-[#191A23]">
+              <div className="w-12 h-12 rounded-xl bg-[#FFF4E5] border border-[#FF9900] flex items-center justify-center text-[#FF9900]">
                 <Quote size={24} />
               </div>
 
               {/* Quote Text */}
-              <blockquote className="font-heading font-medium text-lg md:text-2xl text-white leading-relaxed italic">
+              <blockquote className="font-heading font-medium text-lg md:text-2xl text-[#131A22] leading-relaxed italic">
                 &ldquo;{active.testimonialText}&rdquo;
               </blockquote>
 
               {/* Client Info */}
-              <div className="pt-6 border-t border-white/20 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#B9FF66] text-[#191A23] font-black text-sm flex items-center justify-center border-2 border-white">
+              <div className="pt-6 border-t border-[#E5E7EB] flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-[#FF9900] text-[#131A22] font-black text-sm flex items-center justify-center border-2 border-white ring-2 ring-[#FF9900]">
                   {active.clientName.split(' ').map(n => n[0]).join('')}
                 </div>
                 <div>
-                  <h4 className="font-heading font-extrabold text-base text-[#B9FF66]">
+                  <h4 className="font-heading font-extrabold text-base text-[#131A22]">
                     {active.clientName}
                   </h4>
-                  <p className="text-xs text-white/70 font-semibold">
-                    {active.role}, <span className="text-white font-bold">{active.company}</span>
+                  <p className="text-xs text-[#5F6368] font-semibold">
+                    {active.role}, <span className="text-[#131A22] font-bold">{active.company}</span>
                   </p>
                 </div>
               </div>
@@ -69,15 +69,15 @@ export default function Testimonials() {
           </AnimatePresence>
 
           {/* Slider Navigation */}
-          <div className="flex items-center justify-between mt-12 max-w-3xl mx-auto pt-6 border-t border-white/10">
+          <div className="flex items-center justify-between mt-12 max-w-3xl mx-auto pt-6 border-t border-[#E5E7EB]">
             {/* Pagination Dots */}
             <div className="flex gap-2">
               {testimonialsData.map((_, idx) => (
                 <button
                   key={idx}
                   onClick={() => setActiveIndex(idx)}
-                  className={`h-3 rounded-full transition-all duration-300 cursor-pointer border border-white/40 ${
-                    activeIndex === idx ? 'w-8 bg-[#B9FF66]' : 'w-3 bg-white/20'
+                  className={`h-3 rounded-full transition-all duration-300 cursor-pointer border border-[#E5E7EB] ${
+                    activeIndex === idx ? 'w-8 bg-[#FF9900] border-[#FF9900]' : 'w-3 bg-[#E5E7EB]'
                   }`}
                   aria-label={`Go to slide ${idx + 1}`}
                 />
@@ -88,14 +88,14 @@ export default function Testimonials() {
             <div className="flex gap-3">
               <button
                 onClick={handlePrev}
-                className="w-10 h-10 rounded-full border-2 border-white bg-[#191A23] hover:bg-[#B9FF66] hover:text-[#191A23] flex items-center justify-center text-white transition-colors cursor-pointer"
+                className="w-10 h-10 rounded-full border border-[#E5E7EB] bg-[#131A22] hover:bg-[#FF9900] hover:text-[#131A22] flex items-center justify-center text-white transition-colors cursor-pointer shadow-xs"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={handleNext}
-                className="w-10 h-10 rounded-full border-2 border-white bg-[#191A23] hover:bg-[#B9FF66] hover:text-[#191A23] flex items-center justify-center text-white transition-colors cursor-pointer"
+                className="w-10 h-10 rounded-full border border-[#E5E7EB] bg-[#131A22] hover:bg-[#FF9900] hover:text-[#131A22] flex items-center justify-center text-white transition-colors cursor-pointer shadow-xs"
                 aria-label="Next testimonial"
               >
                 <ChevronRight size={20} />

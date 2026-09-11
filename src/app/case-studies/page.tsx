@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function CaseStudiesIndexPage() {
   return (
-    <article className="pt-28 w-full bg-white text-[#191A23]">
+    <article className="pt-28 w-full bg-white text-[#131A22]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
         <Breadcrumbs items={[{ label: 'Case Studies' }]} />
       </div>

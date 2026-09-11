@@ -18,7 +18,7 @@ export default function ServicesIndexPage() {
   ] as const;
 
   return (
-    <article className="pt-28 w-full bg-white text-[#191A23]">
+    <article className="pt-28 w-full bg-white text-[#131A22]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
         <Breadcrumbs items={[{ label: 'Services' }]} />
       </div>
@@ -40,10 +40,10 @@ export default function ServicesIndexPage() {
           return (
             <div key={cat.title} className="space-y-6">
               {/* Category Header Box */}
-              <div className="bg-[#191A23] text-white rounded-[28px] p-6 sm:p-8 border-2 border-[#191A23] shadow-positivus flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="bg-[#131A22] text-white rounded-[28px] p-6 sm:p-8 border border-[#E5E7EB] shadow-premium flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div className="space-y-2 max-w-2xl">
                   <div className="flex items-center gap-3">
-                    <span className="font-heading font-black text-xs uppercase tracking-wider bg-[#B9FF66] text-[#191A23] px-3 py-1 rounded border border-[#191A23]">
+                    <span className="font-heading font-black text-xs uppercase tracking-wider bg-[#FF9900] text-[#131A22] px-3 py-1 rounded border border-[#E5E7EB]">
                       Category 0{catIndex + 1}
                     </span>
                     <span className="text-xs font-bold text-white/70">
@@ -58,7 +58,7 @@ export default function ServicesIndexPage() {
                   </p>
                 </div>
 
-                <div className="bg-[#B9FF66] text-[#191A23] px-4 py-2 rounded-xl font-heading font-extrabold text-xs uppercase border border-[#191A23]">
+                <div className="bg-[#FF9900] text-[#131A22] px-4 py-2 rounded-xl font-heading font-extrabold text-xs uppercase border border-[#E5E7EB]">
                   {cat.title.includes('Amazon') ? 'Amazon Marketplace' : 'Flipkart Marketplace'}
                 </div>
               </div>
@@ -78,26 +78,26 @@ export default function ServicesIndexPage() {
                     >
                       <div className="space-y-3">
                         <div className="flex items-center justify-between">
-                          <span className="text-[10px] font-heading font-black text-[#666666]">
+                          <span className="text-[10px] font-heading font-black text-[#5F6368]">
                             0{i + 1}
                           </span>
                           <ArrowButton variant="dark" size="sm" diagonal />
                         </div>
                         
-                        <h3 className="font-heading font-extrabold text-lg text-[#191A23] group-hover:underline">
+                        <h3 className="font-heading font-extrabold text-lg text-[#131A22] group-hover:underline">
                           {service.title}
                         </h3>
 
-                        <p className="text-xs font-medium text-[#666666] line-clamp-3 leading-relaxed">
+                        <p className="text-xs font-medium text-[#5F6368] line-clamp-3 leading-relaxed">
                           {service.shortDescription}
                         </p>
                       </div>
 
-                      <div className="pt-4 border-t border-[#191A23]/10 mt-4 flex items-center justify-between">
-                        <span className="text-[10px] font-heading font-black uppercase text-[#191A23]">
+                      <div className="pt-4 border-t border-[#E5E7EB]/10 mt-4 flex items-center justify-between">
+                        <span className="text-[10px] font-heading font-black uppercase text-[#131A22]">
                           View Protocol
                         </span>
-                        <span className="text-xs font-bold text-[#191A23]">→</span>
+                        <span className="text-xs font-bold text-[#131A22]">→</span>
                       </div>
                     </Card>
                   </Link>

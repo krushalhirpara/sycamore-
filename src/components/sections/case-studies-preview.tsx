@@ -20,7 +20,7 @@ export default function CaseStudiesPreview() {
         />
 
         {/* Positivus Dark Container Card */}
-        <div className="bg-[#191A23] text-white rounded-[36px] p-8 md:p-12 border-2 border-[#191A23] shadow-positivus">
+        <div className="bg-[#131A22] text-white rounded-[36px] p-8 md:p-12 border border-[#E5E7EB] shadow-premium">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 divide-y lg:divide-y-0 lg:divide-x divide-white/20">
             {previews.map((cs, i) => (
               <div
@@ -30,7 +30,7 @@ export default function CaseStudiesPreview() {
                 }`}
               >
                 <div className="space-y-3">
-                  <span className="text-[10px] font-heading font-black uppercase tracking-wider bg-[#B9FF66] text-[#191A23] px-2.5 py-1 rounded border border-[#191A23] inline-block">
+                  <span className="text-[10px] font-heading font-black uppercase tracking-wider bg-[#FF9900] text-[#131A22] px-2.5 py-1 rounded border border-[#E5E7EB] inline-block">
                     {cs.marketplace} • {cs.clientName}
                   </span>
                   
@@ -43,7 +43,7 @@ export default function CaseStudiesPreview() {
                 <div className="grid grid-cols-3 gap-2 py-3 border-y border-white/10 my-2">
                   {cs.metrics.map((m, idx) => (
                     <div key={idx} className="text-center">
-                      <span className="block font-heading text-lg font-black text-[#B9FF66]">
+                      <span className="block font-heading text-lg font-black text-[#FF9900]">
                         {m.value}
                       </span>
                       <span className="text-[10px] text-white/60 font-semibold uppercase tracking-wider">
@@ -58,7 +58,7 @@ export default function CaseStudiesPreview() {
                   className="group flex items-center gap-3 no-underline pt-2"
                   data-cursor="view"
                 >
-                  <span className="text-xs font-heading font-extrabold uppercase tracking-wider text-[#B9FF66] group-hover:underline">
+                  <span className="text-xs font-heading font-extrabold uppercase tracking-wider text-[#FF9900] group-hover:underline">
                     Learn More
                   </span>
                   <ArrowButton variant="lime" size="sm" diagonal />

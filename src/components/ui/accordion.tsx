@@ -19,17 +19,17 @@ export function AccordionItem({
   onToggle,
 }: AccordionItemProps) {
   return (
-    <div className="border-b border-slate-200 last:border-0 py-4">
+    <div className="border-b border-[#E5E7EB] last:border-0 py-4">
       <button
         onClick={onToggle}
-        className="flex w-full items-center justify-between text-left font-heading text-lg font-medium text-slate-900 py-2 hover:text-brand-indigo transition-colors duration-200 cursor-pointer"
+        className="flex w-full items-center justify-between text-left font-heading text-lg font-medium text-[#131A22] py-2 hover:text-[#FF9900] transition-colors duration-200 cursor-pointer"
         aria-expanded={isOpen}
       >
         <span>{title}</span>
         <motion.span
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.2 }}
-          className="text-slate-400"
+          className={isOpen ? 'text-[#FF9900]' : 'text-[#5F6368]'}
         >
           <ChevronDown size={20} />
         </motion.span>
@@ -44,7 +44,7 @@ export function AccordionItem({
             transition={{ duration: 0.25, ease: 'easeInOut' }}
             className="overflow-hidden"
           >
-            <div className="pt-2 pb-3 text-slate-500 text-sm md:text-base leading-relaxed">
+            <div className="pt-2 pb-3 text-[#5F6368] text-sm md:text-base leading-relaxed">
               {children}
             </div>
           </motion.div>

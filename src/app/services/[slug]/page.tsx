@@ -76,7 +76,7 @@ export default async function ServicePage({ params }: PageProps) {
     .slice(0, 3);
 
   return (
-    <article className="pt-28 w-full bg-white text-[#191A23]">
+    <article className="pt-28 w-full bg-white text-[#131A22]">
       {/* Breadcrumbs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
         <Breadcrumbs
@@ -92,15 +92,15 @@ export default async function ServicePage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-block bg-[#B9FF66] text-[#191A23] border-2 border-[#191A23] px-3 py-1 rounded-md text-xs font-heading font-black uppercase tracking-wider shadow-xs">
+            <div className="inline-block bg-[#FFF4E5] text-[#131A22] border border-[#FF9900] px-3 py-1 rounded-md text-xs font-heading font-black uppercase tracking-wider shadow-xs">
               {service.category}
             </div>
 
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-none text-[#191A23]">
+            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-none text-[#131A22]">
               {service.heroHeading}
             </h1>
 
-            <p className="text-[#666666] text-base sm:text-xl font-medium leading-relaxed max-w-xl">
+            <p className="text-[#5F6368] text-base sm:text-xl font-medium leading-relaxed max-w-xl">
               {service.heroDescription}
             </p>
 
@@ -115,13 +115,13 @@ export default async function ServicePage({ params }: PageProps) {
           </div>
 
           <div className="lg:col-span-5 flex justify-center">
-            <div className="w-full max-w-md bg-[#191A23] p-8 rounded-[36px] border-2 border-[#191A23] shadow-positivus flex flex-col items-center justify-center gap-6 text-center text-white">
+            <div className="w-full max-w-md bg-[#131A22] p-8 rounded-[36px] border border-[#E5E7EB] shadow-premium flex flex-col items-center justify-center gap-6 text-center text-white">
               <ServiceIllustration type={illustrationType} />
               <div className="space-y-2">
-                <span className="text-xs font-heading font-black uppercase tracking-wider bg-[#B9FF66] text-[#191A23] px-3 py-1 rounded">
+                <span className="text-xs font-heading font-black uppercase tracking-wider bg-[#FF9900] text-[#131A22] px-3 py-1 rounded">
                   Sycamore East SPN Protocol
                 </span>
-                <h3 className="font-heading font-extrabold text-xl">{service.title}</h3>
+                <h3 className="font-heading font-extrabold text-xl text-white">{service.title}</h3>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default async function ServicePage({ params }: PageProps) {
       </section>
 
       {/* Problem Section */}
-      <section className="py-16 bg-[#F3F3F3] border-y-2 border-[#191A23]">
+      <section className="py-16 bg-[#F7F7F7] border-y border-[#E5E7EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="The Problem"
@@ -144,11 +144,11 @@ export default async function ServicePage({ params }: PageProps) {
               { title: 'Suppressed Conversion Rates', desc: 'Weak bullet points, unoptimized images, and missing A+ graphics hurt conversion velocity.' }
             ].map((prob, i) => (
               <Card key={i} variant="white" className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-red-100 border-2 border-[#191A23] flex items-center justify-center text-red-600">
+                <div className="w-10 h-10 rounded-xl bg-red-100 border border-[#DC2626]/20 flex items-center justify-center text-[#DC2626]">
                   <AlertTriangle size={20} />
                 </div>
-                <h3 className="font-heading font-extrabold text-lg text-[#191A23]">{prob.title}</h3>
-                <p className="text-xs sm:text-sm text-[#666666] font-medium leading-relaxed">{prob.desc}</p>
+                <h3 className="font-heading font-extrabold text-lg text-[#131A22]">{prob.title}</h3>
+                <p className="text-xs sm:text-sm text-[#5F6368] font-medium leading-relaxed">{prob.desc}</p>
               </Card>
             ))}
           </div>
@@ -156,27 +156,27 @@ export default async function ServicePage({ params }: PageProps) {
       </section>
 
       {/* Solution Section */}
-      <section className="py-16 bg-white border-b-2 border-[#191A23]">
+      <section className="py-16 bg-white border-b border-[#E5E7EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card variant="lime" className="p-8 md:p-12 space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#191A23] text-[#B9FF66] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-[#131A22] text-[#FF9900] flex items-center justify-center">
                 <Lightbulb size={20} />
               </div>
-              <span className="text-xs font-heading font-black uppercase tracking-wider bg-[#191A23] text-white px-3 py-1 rounded">
+              <span className="text-xs font-heading font-black uppercase tracking-wider bg-[#131A22] text-white px-3 py-1 rounded">
                 Our Solution Architecture
               </span>
             </div>
 
-            <h2 className="font-heading font-extrabold text-2xl md:text-4xl text-[#191A23]">
+            <h2 className="font-heading font-extrabold text-2xl md:text-4xl text-[#131A22]">
               How Sycamore East SPN Solves It
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {service.benefits.map((benefit, i) => (
-                <div key={i} className="flex items-start gap-3 bg-white p-4 rounded-2xl border-2 border-[#191A23] shadow-xs">
-                  <CheckCircle2 size={20} className="text-[#191A23] shrink-0 mt-0.5" />
-                  <span className="font-heading font-extrabold text-sm text-[#191A23]">{benefit}</span>
+                <div key={i} className="flex items-start gap-3 bg-white p-4 rounded-2xl border border-[#E5E7EB] shadow-xs">
+                  <CheckCircle2 size={20} className="text-[#131A22] shrink-0 mt-0.5" />
+                  <span className="font-heading font-extrabold text-sm text-[#131A22]">{benefit}</span>
                 </div>
               ))}
             </div>
@@ -194,17 +194,17 @@ export default async function ServicePage({ params }: PageProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {service.features.map((feature, i) => (
             <Card key={i} variant="glass-light" className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-xl bg-[#191A23] text-[#B9FF66] font-heading font-black text-sm flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-[#131A22] text-[#FF9900] font-heading font-black text-sm flex items-center justify-center shrink-0">
                 0{i + 1}
               </div>
-              <span className="font-heading font-extrabold text-base text-[#191A23]">{feature}</span>
+              <span className="font-heading font-extrabold text-base text-[#131A22]">{feature}</span>
             </Card>
           ))}
         </div>
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-[#F3F3F3] border-y-2 border-[#191A23]">
+      <section className="py-20 bg-[#F7F7F7] border-y border-[#E5E7EB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Execution Protocol"
@@ -214,8 +214,8 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {service.process.map((step, i) => (
               <Card key={i} variant="white" className="space-y-3">
-                <span className="text-2xl font-heading font-black text-[#191A23]">0{i + 1}</span>
-                <h3 className="font-heading font-extrabold text-base text-[#191A23]">{step}</h3>
+                <span className="text-2xl font-heading font-black text-[#FF9900]">0{i + 1}</span>
+                <h3 className="font-heading font-extrabold text-base text-[#131A22]">{step}</h3>
               </Card>
             ))}
           </div>
@@ -231,8 +231,8 @@ export default async function ServicePage({ params }: PageProps) {
             {relatedServices.map((rel) => (
               <Link key={rel.slug} href={`/services/${rel.slug}`} className="no-underline group">
                 <Card variant="white" className="space-y-3">
-                  <h4 className="font-heading font-extrabold text-lg text-[#191A23] group-hover:underline">{rel.title}</h4>
-                  <p className="text-xs text-[#666666] line-clamp-2 font-medium">{rel.shortDescription}</p>
+                  <h4 className="font-heading font-extrabold text-lg text-[#131A22] group-hover:underline">{rel.title}</h4>
+                  <p className="text-xs text-[#5F6368] line-clamp-2 font-medium">{rel.shortDescription}</p>
                   <ArrowButton variant="dark" size="sm" diagonal />
                 </Card>
               </Link>

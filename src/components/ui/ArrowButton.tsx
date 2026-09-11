@@ -24,9 +24,9 @@ export default function ArrowButton({
   };
 
   const variantClasses = {
-    dark: 'bg-[#191A23] text-[#B9FF66] border-2 border-[#191A23]',
-    light: 'bg-white text-[#191A23] border-2 border-[#191A23]',
-    lime: 'bg-[#B9FF66] text-[#191A23] border-2 border-[#191A23]',
+    dark: 'bg-[#131A22] text-[#FF9900] border border-[#E5E7EB]',
+    light: 'bg-white text-[#131A22] border border-[#E5E7EB]',
+    lime: 'bg-[#FF9900] text-[#131A22] border border-[#E5E7EB]',
   };
 
   const IconComponent = diagonal ? ArrowUpRight : ArrowRight;

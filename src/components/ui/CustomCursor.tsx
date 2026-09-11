@@ -98,8 +98,8 @@ export default function CustomCursor() {
           {/* Main Pointer Arrow */}
           <path
             d="M2 2L18 12L10.5 14.5L7.5 21.5L2 2Z"
-            fill="#191A23"
-            stroke="#B9FF66"
+            fill="#131A22"
+            stroke="#FF9900"
             strokeWidth="2"
             strokeLinejoin="round"
           />

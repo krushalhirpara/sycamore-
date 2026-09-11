@@ -47,12 +47,12 @@ export default function ServiceGrid() {
                   <div className="flex justify-between items-start gap-4">
                     <div className="space-y-3 max-w-[65%]">
                       <span
-                        className={`text-[10px] font-heading font-black uppercase tracking-wider px-2.5 py-1 rounded-md border border-[#191A23] ${
+                        className={`text-[10px] font-heading font-black uppercase tracking-wider px-2.5 py-1 rounded-md border border-[#E5E7EB] ${
                           isDark
-                            ? 'bg-[#B9FF66] text-[#191A23]'
+                            ? 'bg-[#FF9900] text-[#131A22]'
                             : isLime
-                            ? 'bg-white text-[#191A23]'
-                            : 'bg-[#B9FF66] text-[#191A23]'
+                            ? 'bg-white text-[#131A22]'
+                            : 'bg-[#FF9900] text-[#131A22]'
                         }`}
                       >
                         {service.category.includes('Amazon') ? 'Amazon' : 'Flipkart'}
@@ -60,7 +60,7 @@ export default function ServiceGrid() {
                       
                       <h3
                         className={`font-heading font-extrabold text-2xl md:text-3xl leading-snug tracking-tight ${
-                          isDark ? 'text-white' : 'text-[#191A23]'
+                          isDark ? 'text-white' : 'text-[#131A22]'
                         }`}
                       >
                         {service.title}
@@ -73,13 +73,13 @@ export default function ServiceGrid() {
 
                   <p
                     className={`text-xs md:text-sm font-medium leading-relaxed my-6 ${
-                      isDark ? 'text-white/80' : 'text-[#666666]'
+                      isDark ? 'text-white/80' : 'text-[#5F6368]'
                     }`}
                   >
                     {service.shortDescription}
                   </p>
 
-                  <div className="flex items-center gap-3 pt-4 border-t border-[#191A23]/20">
+                  <div className="flex items-center gap-3 pt-4 border-t border-[#E5E7EB]/20">
                     <ArrowButton
                       variant={isDark ? 'lime' : 'dark'}
                       size="md"
@@ -87,7 +87,7 @@ export default function ServiceGrid() {
                     />
                     <span
                       className={`text-xs font-heading font-extrabold uppercase tracking-wider ${
-                        isDark ? 'text-white group-hover:text-[#B9FF66]' : 'text-[#191A23]'
+                        isDark ? 'text-white group-hover:text-[#FF9900]' : 'text-[#131A22]'
                       }`}
                     >
                       Learn More
@@ -102,7 +102,7 @@ export default function ServiceGrid() {
         {/* View All Services CTA Button */}
         <div className="text-center mt-12">
           <Link href="/services" className="no-underline">
-            <div className="inline-flex items-center gap-3 bg-[#191A23] text-white px-8 py-4 rounded-2xl border-2 border-[#191A23] font-heading font-extrabold text-base hover:bg-[#B9FF66] hover:text-[#191A23] transition-all shadow-positivus group">
+            <div className="inline-flex items-center gap-3 bg-[#131A22] text-white px-8 py-4 rounded-2xl border border-[#E5E7EB] font-heading font-extrabold text-base hover:bg-[#FF9900] hover:text-[#131A22] transition-all shadow-premium group">
               <span>View All 27 Marketplace Services</span>
               <ArrowButton variant="lime" size="sm" />
             </div>

@@ -60,8 +60,8 @@ export default function Header() {
       <motion.div
         className={cn(
           'max-w-7xl mx-auto transition-all duration-500',
-          'bg-[#191A23] border-2 border-[#191A23] rounded-2xl px-5 py-3',
-          scrolled ? 'shadow-[0_8px_32px_rgba(0,0,0,0.35)]' : 'shadow-[0_4px_24px_rgba(0,0,0,0.2)]'
+          'bg-white border border-[#E5E7EB] rounded-2xl px-5 py-3',
+          scrolled ? 'shadow-[0_8px_32px_rgba(0,0,0,0.12)]' : 'shadow-[0_4px_24px_rgba(0,0,0,0.06)]'
         )}
         layout
       >
@@ -71,24 +71,24 @@ export default function Header() {
           <Link href="/" className="group flex items-center gap-3 no-underline flex-shrink-0">
             {/* Logo Mark */}
             <div className="relative w-10 h-10 flex-shrink-0">
-              <div className="w-10 h-10 bg-[#B9FF66] rounded-xl border-2 border-[#B9FF66] flex items-center justify-center group-hover:rounded-full transition-all duration-300">
-                <span className="font-black text-xl text-[#191A23] leading-none">S</span>
+              <div className="w-10 h-10 bg-[#FF9900] rounded-xl border-2 border-[#FF9900] flex items-center justify-center group-hover:rounded-full transition-all duration-300 shadow-xs">
+                <span className="font-black text-xl text-[#131A22] leading-none">S</span>
               </div>
               {/* Pulse indicator */}
-              <span className="absolute -top-1 -right-1 w-3 h-3 bg-[#B9FF66] rounded-full border-2 border-[#191A23] animate-pulse" />
+              <span className="absolute -top-1 -right-1 w-3 h-3 bg-[#FF9900] rounded-full border border-[#E5E7EB] animate-pulse" />
             </div>
 
             {/* Brand Text */}
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
-                <span className="font-black text-[17px] tracking-tight text-white leading-none">
+                <span className="font-black text-[17px] tracking-tight text-[#131A22] leading-none">
                   Sycamore East
                 </span>
-                <span className="text-[9px] font-black uppercase tracking-widest bg-[#B9FF66] text-[#191A23] px-1.5 py-0.5 rounded-md leading-tight">
+                <span className="text-[9px] font-black uppercase tracking-widest bg-[#FF9900] text-[#131A22] px-1.5 py-0.5 rounded-md leading-tight">
                   SPN
                 </span>
               </div>
-              <span className="text-[10px] text-white/40 font-semibold tracking-wider mt-0.5">
+              <span className="text-[10px] text-[#5F6368] font-semibold tracking-wider mt-0.5">
                 Amazon & Flipkart Growth
               </span>
             </div>
@@ -112,10 +112,10 @@ export default function Header() {
                   >
                     <button
                       className={cn(
-                        'flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl transition-all duration-200',
+                        'flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl transition-all duration-200 cursor-pointer',
                         isActive || servicesMenuOpen
-                          ? 'bg-[#B9FF66] text-[#191A23]'
-                          : 'text-white/75 hover:text-white hover:bg-white/10'
+                          ? 'bg-[#FF9900] text-[#131A22]'
+                          : 'text-[#131A22] hover:text-[#FF9900] hover:bg-[#FFF4E5]'
                       )}
                     >
                       {item.label}
@@ -138,18 +138,18 @@ export default function Header() {
                           transition={{ duration: 0.18, ease: 'easeOut' }}
                           className="absolute left-1/2 -translate-x-1/2 top-full pt-4 w-[980px] max-w-[92vw]"
                         >
-                          <div className="bg-[#191A23] border-2 border-[#B9FF66]/20 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.5)] overflow-hidden">
+                          <div className="bg-[#131A22] border-2 border-[#FF9900]/20 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.5)] overflow-hidden">
                             {/* Dropdown Header */}
-                            <div className="bg-[#B9FF66] px-6 py-3 flex items-center justify-between">
+                            <div className="bg-[#FF9900] px-6 py-3 flex items-center justify-between">
                               <div className="flex items-center gap-2">
-                                <Zap size={14} className="text-[#191A23]" />
-                                <span className="text-xs font-black uppercase tracking-widest text-[#191A23]">
+                                <Zap size={14} className="text-[#131A22]" />
+                                <span className="text-xs font-black uppercase tracking-widest text-[#131A22]">
                                   Our Services — Amazon & Flipkart Growth Partner
                                 </span>
                               </div>
                               <Link
                                 href="/services"
-                                className="text-[11px] font-black text-[#191A23] flex items-center gap-1 hover:underline no-underline"
+                                className="text-[11px] font-black text-[#131A22] flex items-center gap-1 hover:underline no-underline"
                               >
                                 View All <ArrowUpRight size={11} />
                               </Link>
@@ -157,7 +157,7 @@ export default function Header() {
 
                             {/* Service Grid */}
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-white/5 p-0">
-                              {categories.map((category, i) => {
+                              {categories.map((category) => {
                                 const meta = categoryShortNames[category];
                                 const items = groupedServices[category];
                                 return (
@@ -172,7 +172,7 @@ export default function Header() {
                                         className={meta.imgClass}
                                         style={{ maxHeight: 20 }}
                                       />
-                                      <span className="text-[11px] font-black uppercase tracking-wider text-[#B9FF66]">
+                                      <span className="text-[11px] font-black uppercase tracking-wider text-[#FF9900]">
                                         {meta.label}
                                       </span>
                                     </div>
@@ -185,7 +185,7 @@ export default function Header() {
                                           href={subItem.href}
                                           className="group flex items-start gap-2 p-2 rounded-lg hover:bg-white/5 transition-all no-underline"
                                         >
-                                          <div className="w-1 h-1 rounded-full bg-[#B9FF66]/40 mt-2 flex-shrink-0 group-hover:bg-[#B9FF66] transition-colors" />
+                                          <div className="w-1 h-1 rounded-full bg-[#FF9900]/40 mt-2 flex-shrink-0 group-hover:bg-[#FF9900] transition-colors" />
                                           <div>
                                             <span className="text-[12px] font-bold text-white/80 group-hover:text-white transition-colors leading-tight block">
                                               {subItem.name}
@@ -206,12 +206,12 @@ export default function Header() {
 
                             {/* Dropdown Footer */}
                             <div className="border-t border-white/10 px-6 py-3 flex items-center justify-between">
-                              <span className="text-[11px] text-white/30 font-semibold">
+                              <span className="text-[11px] text-white/40 font-semibold">
                                 Amazon SPN Certified • Flipkart Accredited
                               </span>
                               <Link
                                 href="/contact"
-                                className="flex items-center gap-1.5 bg-[#B9FF66] text-[#191A23] text-[11px] font-black px-3 py-1.5 rounded-lg no-underline hover:bg-white transition-colors"
+                                className="flex items-center gap-1.5 bg-[#FF9900] text-[#131A22] text-[11px] font-black px-3 py-1.5 rounded-lg no-underline hover:bg-[#E88B00] hover:text-white transition-colors"
                               >
                                 Free Consultation <ArrowUpRight size={11} />
                               </Link>
@@ -231,8 +231,8 @@ export default function Header() {
                   className={cn(
                     'text-sm font-bold px-4 py-2 rounded-xl transition-all duration-200 no-underline',
                     isActive
-                      ? 'bg-[#B9FF66] text-[#191A23]'
-                      : 'text-white/75 hover:text-white hover:bg-white/10'
+                      ? 'bg-[#FF9900] text-[#131A22]'
+                      : 'text-[#131A22] hover:text-[#FF9900] hover:bg-[#FFF4E5]'
                   )}
                 >
                   {item.label}
@@ -245,7 +245,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
             <Link
               href="/contact"
-              className="flex items-center gap-2 bg-[#B9FF66] text-[#191A23] font-black text-sm px-5 py-2.5 rounded-xl border-2 border-[#B9FF66] hover:bg-white hover:border-white transition-all duration-200 no-underline group"
+              className="flex items-center gap-2 bg-[#FF9900] text-[#131A22] font-black text-sm px-5 py-2.5 rounded-xl border border-[#FF9900] hover:bg-[#E88B00] hover:border-[#E88B00] hover:text-white transition-all duration-200 no-underline group shadow-xs"
             >
               <span>Get Free Audit</span>
               <ArrowUpRight size={15} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -256,7 +256,7 @@ export default function Header() {
           <div className="lg:hidden z-50">
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 rounded-xl bg-white/10 text-white hover:bg-[#B9FF66] hover:text-[#191A23] transition-all duration-200 border border-white/10"
+              className="p-2 rounded-xl bg-[#F7F7F7] text-[#131A22] hover:bg-[#FF9900] hover:text-[#131A22] transition-all duration-200 border border-[#E5E7EB]"
               aria-label="Toggle Menu"
             >
               <AnimatePresence mode="wait">
@@ -283,7 +283,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -12, scale: 0.98 }}
             transition={{ duration: 0.2, ease: 'easeOut' }}
-            className="lg:hidden mt-2 max-w-7xl mx-auto bg-[#191A23] border-2 border-[#B9FF66]/20 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.4)] overflow-hidden"
+            className="lg:hidden mt-2 max-w-7xl mx-auto bg-[#131A22] border-2 border-[#FF9900]/20 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.4)] overflow-hidden"
           >
             {/* Mobile Nav Items */}
             <div className="p-4 space-y-1">
@@ -314,7 +314,7 @@ export default function Header() {
                             transition={{ duration: 0.2 }}
                             className="overflow-hidden"
                           >
-                            <div className="mt-1 ml-4 border-l-2 border-[#B9FF66]/30 pl-4 space-y-4 pb-2">
+                            <div className="mt-1 ml-4 border-l-2 border-[#FF9900]/30 pl-4 space-y-4 pb-2">
                               {categories.map((cat) => {
                                 const meta = categoryShortNames[cat];
                                 return (
@@ -328,7 +328,7 @@ export default function Header() {
                                         className={meta.imgClass}
                                         style={{ maxHeight: 16 }}
                                       />
-                                      <span className="text-[10px] font-black uppercase tracking-widest text-[#B9FF66]">
+                                      <span className="text-[10px] font-black uppercase tracking-widest text-[#FF9900]">
                                         {meta.label}
                                       </span>
                                     </div>
@@ -361,7 +361,7 @@ export default function Header() {
                     className={cn(
                       'block px-4 py-3 rounded-xl text-sm font-bold no-underline transition-all',
                       isActive
-                        ? 'bg-[#B9FF66] text-[#191A23]'
+                        ? 'bg-[#FF9900] text-[#131A22]'
                         : 'text-white/75 hover:bg-white/5 hover:text-white'
                     )}
                   >
@@ -376,7 +376,7 @@ export default function Header() {
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center gap-2 w-full bg-[#B9FF66] text-[#191A23] font-black text-sm px-5 py-3 rounded-xl no-underline hover:bg-white transition-colors"
+                className="flex items-center justify-center gap-2 w-full bg-[#FF9900] text-[#131A22] font-black text-sm px-5 py-3 rounded-xl no-underline hover:bg-white transition-colors"
               >
                 Get Free Audit <ArrowUpRight size={15} />
               </Link>

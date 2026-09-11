@@ -68,7 +68,7 @@ export default function ContactPage() {
   };
 
   return (
-    <article className="pt-28 w-full bg-white text-[#191A23]">
+    <article className="pt-28 w-full bg-white text-[#131A22]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
         <Breadcrumbs items={[{ label: 'Contact Us' }]} />
       </div>
@@ -84,33 +84,33 @@ export default function ContactPage() {
           {/* Left Column: Contact Info & Value Cards */}
           <div className="lg:col-span-5 space-y-6">
             <Card variant="lime" className="space-y-4">
-              <span className="text-xs font-heading font-black uppercase tracking-wider bg-[#191A23] text-white px-2.5 py-1 rounded">
+              <span className="text-xs font-heading font-black uppercase tracking-wider bg-[#131A22] text-white px-2.5 py-1 rounded">
                 Free 24h Audit
               </span>
-              <h2 className="font-heading font-extrabold text-2xl md:text-3xl text-[#191A23]">
+              <h2 className="font-heading font-extrabold text-2xl md:text-3xl text-[#131A22]">
                 Let&apos;s Scale Your Marketplace Business
               </h2>
-              <p className="text-xs md:text-sm font-medium text-[#191A23] leading-relaxed">
+              <p className="text-xs md:text-sm font-medium text-[#131A22] leading-relaxed">
                 Fill in the form and our certified marketplace specialists will evaluate your catalog listings and PPC efficiency within 24 hours—at no cost.
               </p>
             </Card>
 
             <div className="space-y-4">
               {[
-                { icon: <Mail size={18} className="text-[#191A23]" />, label: 'Email Us', value: 'hello@sycamoregrowth.com', href: 'mailto:hello@sycamoregrowth.com' },
-                { icon: <Phone size={18} className="text-[#191A23]" />, label: 'Call Us', value: '+91 98765 43210', href: 'tel:+919876543210' },
-                { icon: <MapPin size={18} className="text-[#191A23]" />, label: 'Headquarters', value: 'Bangalore, India', href: undefined },
+                { icon: <Mail size={18} className="text-[#131A22]" />, label: 'Email Us', value: 'hello@sycamoregrowth.com', href: 'mailto:hello@sycamoregrowth.com' },
+                { icon: <Phone size={18} className="text-[#131A22]" />, label: 'Call Us', value: '+91 98765 43210', href: 'tel:+919876543210' },
+                { icon: <MapPin size={18} className="text-[#131A22]" />, label: 'Headquarters', value: 'Bangalore, India', href: undefined },
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-4 p-4 rounded-2xl border-2 border-[#191A23] bg-white shadow-positivus">
-                  <div className="w-10 h-10 rounded-xl bg-[#B9FF66] border border-[#191A23] flex items-center justify-center shrink-0">
+                <div key={i} className="flex items-center gap-4 p-4 rounded-2xl border border-[#E5E7EB] bg-white shadow-premium">
+                  <div className="w-10 h-10 rounded-xl bg-[#FF9900] border border-[#E5E7EB] flex items-center justify-center shrink-0">
                     {item.icon}
                   </div>
                   <div>
-                    <p className="text-[10px] font-heading font-black text-[#666666] uppercase tracking-wider">{item.label}</p>
+                    <p className="text-[10px] font-heading font-black text-[#5F6368] uppercase tracking-wider">{item.label}</p>
                     {item.href ? (
-                      <a href={item.href} className="text-[#191A23] text-sm font-extrabold hover:underline no-underline">{item.value}</a>
+                      <a href={item.href} className="text-[#131A22] text-sm font-extrabold hover:underline no-underline">{item.value}</a>
                     ) : (
-                      <p className="text-[#191A23] text-sm font-extrabold">{item.value}</p>
+                      <p className="text-[#131A22] text-sm font-extrabold">{item.value}</p>
                     )}
                   </div>
                 </div>
@@ -118,12 +118,12 @@ export default function ContactPage() {
             </div>
 
             <Card variant="dark" className="space-y-3">
-              <span className="text-xs font-heading font-black uppercase text-[#B9FF66]">
+              <span className="text-xs font-heading font-black uppercase text-[#FF9900]">
                 Accreditation & Badges
               </span>
               <div className="flex flex-wrap gap-2 pt-1">
                 {['Amazon SPN Certified', 'Flipkart Preferred Partner', '6+ Years Experience'].map((cert) => (
-                  <span key={cert} className="text-[10px] font-heading font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-[#B9FF66] text-[#191A23]">
+                  <span key={cert} className="text-[10px] font-heading font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-[#FF9900] text-[#131A22]">
                     {cert}
                   </span>
                 ))}
@@ -133,10 +133,10 @@ export default function ContactPage() {
 
           {/* Right Column: Positivus Contact Form */}
           <div className="lg:col-span-7">
-            <div className="bg-[#F3F3F3] rounded-[36px] border-2 border-[#191A23] p-8 md:p-10 shadow-positivus">
+            <div className="bg-[#F7F7F7] rounded-[36px] border border-[#E5E7EB] p-8 md:p-10 shadow-premium">
               
               {status === 'success' && (
-                <div className="mb-6 flex items-start gap-3 p-4 rounded-2xl bg-[#B9FF66] border-2 border-[#191A23] text-[#191A23]">
+                <div className="mb-6 flex items-start gap-3 p-4 rounded-2xl bg-[#FF9900] border border-[#E5E7EB] text-[#131A22]">
                   <CheckCircle2 size={20} className="shrink-0 mt-0.5" />
                   <div>
                     <p className="font-heading font-extrabold text-sm">Audit Request Received!</p>
@@ -146,7 +146,7 @@ export default function ContactPage() {
               )}
 
               {status === 'error' && (
-                <div className="mb-6 flex items-start gap-3 p-4 rounded-2xl bg-red-100 border-2 border-[#191A23] text-red-800">
+                <div className="mb-6 flex items-start gap-3 p-4 rounded-2xl bg-red-100 border border-[#E5E7EB] text-red-800">
                   <AlertCircle size={20} className="shrink-0 mt-0.5" />
                   <div>
                     <p className="font-heading font-extrabold text-sm">Submission Error</p>
@@ -160,55 +160,55 @@ export default function ContactPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="name" className="block text-xs font-heading font-extrabold text-[#191A23] mb-1.5 uppercase tracking-wider">Full Name *</label>
+                    <label htmlFor="name" className="block text-xs font-heading font-extrabold text-[#131A22] mb-1.5 uppercase tracking-wider">Full Name *</label>
                     <input id="name" name="name" type="text" value={formData.name} onChange={handleChange}
                       placeholder="Your full name"
-                      className={`w-full px-4 py-3 bg-white border-2 rounded-2xl text-[#191A23] text-xs font-bold placeholder-slate-400 focus:outline-none focus:bg-[#B9FF66]/10 transition-all ${errors.name ? 'border-red-500' : 'border-[#191A23]'}`}
+                      className={`w-full px-4 py-3 bg-white border rounded-2xl text-[#131A22] text-xs font-bold placeholder-[#5F6368]/60 focus:outline-none focus:border-[#FF9900] focus:ring-1 focus:ring-[#FF9900] transition-all ${errors.name ? 'border-[#DC2626]' : 'border-[#E5E7EB]'}`}
                     />
-                    {errors.name && <p className="text-red-500 text-xs mt-1 font-bold">{errors.name}</p>}
+                    {errors.name && <p className="text-[#DC2626] text-xs mt-1 font-bold">{errors.name}</p>}
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-xs font-heading font-extrabold text-[#191A23] mb-1.5 uppercase tracking-wider">Email Address *</label>
+                    <label htmlFor="email" className="block text-xs font-heading font-extrabold text-[#131A22] mb-1.5 uppercase tracking-wider">Email Address *</label>
                     <input id="email" name="email" type="email" value={formData.email} onChange={handleChange}
                       placeholder="you@company.com"
-                      className={`w-full px-4 py-3 bg-white border-2 rounded-2xl text-[#191A23] text-xs font-bold placeholder-slate-400 focus:outline-none focus:bg-[#B9FF66]/10 transition-all ${errors.email ? 'border-red-500' : 'border-[#191A23]'}`}
+                      className={`w-full px-4 py-3 bg-white border rounded-2xl text-[#131A22] text-xs font-bold placeholder-[#5F6368]/60 focus:outline-none focus:border-[#FF9900] focus:ring-1 focus:ring-[#FF9900] transition-all ${errors.email ? 'border-[#DC2626]' : 'border-[#E5E7EB]'}`}
                     />
-                    {errors.email && <p className="text-red-500 text-xs mt-1 font-bold">{errors.email}</p>}
+                    {errors.email && <p className="text-[#DC2626] text-xs mt-1 font-bold">{errors.email}</p>}
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="phone" className="block text-xs font-heading font-extrabold text-[#191A23] mb-1.5 uppercase tracking-wider">Phone Number</label>
+                    <label htmlFor="phone" className="block text-xs font-heading font-extrabold text-[#131A22] mb-1.5 uppercase tracking-wider">Phone Number</label>
                     <input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange}
                       placeholder="+91 98765 43210"
-                      className="w-full px-4 py-3 bg-white border-2 border-[#191A23] rounded-2xl text-[#191A23] text-xs font-bold placeholder-slate-400 focus:outline-none focus:bg-[#B9FF66]/10 transition-all"
+                      className="w-full px-4 py-3 bg-white border border-[#E5E7EB] rounded-2xl text-[#131A22] text-xs font-bold placeholder-[#5F6368]/60 focus:outline-none focus:border-[#FF9900] focus:ring-1 focus:ring-[#FF9900] transition-all"
                     />
                   </div>
                   <div>
-                    <label htmlFor="company" className="block text-xs font-heading font-extrabold text-[#191A23] mb-1.5 uppercase tracking-wider">Company / Brand Name</label>
+                    <label htmlFor="company" className="block text-xs font-heading font-extrabold text-[#131A22] mb-1.5 uppercase tracking-wider">Company / Brand Name</label>
                     <input id="company" name="company" type="text" value={formData.company} onChange={handleChange}
                       placeholder="Your brand"
-                      className="w-full px-4 py-3 bg-white border-2 border-[#191A23] rounded-2xl text-[#191A23] text-xs font-bold placeholder-slate-400 focus:outline-none focus:bg-[#B9FF66]/10 transition-all"
+                      className="w-full px-4 py-3 bg-white border border-[#E5E7EB] rounded-2xl text-[#131A22] text-xs font-bold placeholder-[#5F6368]/60 focus:outline-none focus:border-[#FF9900] focus:ring-1 focus:ring-[#FF9900] transition-all"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="marketplace" className="block text-xs font-heading font-extrabold text-[#191A23] mb-1.5 uppercase tracking-wider">Target Marketplace *</label>
+                    <label htmlFor="marketplace" className="block text-xs font-heading font-extrabold text-[#131A22] mb-1.5 uppercase tracking-wider">Target Marketplace *</label>
                     <select id="marketplace" name="marketplace" value={formData.marketplace} onChange={handleChange}
-                      className={`w-full px-4 py-3 bg-white border-2 rounded-2xl text-xs font-bold focus:outline-none focus:bg-[#B9FF66]/10 transition-all ${errors.marketplace ? 'border-red-500 text-slate-400' : 'border-[#191A23] text-[#191A23]'}`}
+                      className={`w-full px-4 py-3 bg-white border rounded-2xl text-xs font-bold focus:outline-none focus:border-[#FF9900] focus:ring-1 focus:ring-[#FF9900] transition-all ${errors.marketplace ? 'border-[#DC2626] text-[#5F6368]' : 'border-[#E5E7EB] text-[#131A22]'}`}
                     >
                       <option value="" disabled>Select marketplace</option>
                       {marketplaces.map(m => <option key={m} value={m}>{m}</option>)}
                     </select>
-                    {errors.marketplace && <p className="text-red-500 text-xs mt-1 font-bold">{errors.marketplace}</p>}
+                    {errors.marketplace && <p className="text-[#DC2626] text-xs mt-1 font-bold">{errors.marketplace}</p>}
                   </div>
                   <div>
-                    <label htmlFor="revenue" className="block text-xs font-heading font-extrabold text-[#191A23] mb-1.5 uppercase tracking-wider">Monthly Revenue Range</label>
+                    <label htmlFor="revenue" className="block text-xs font-heading font-extrabold text-[#131A22] mb-1.5 uppercase tracking-wider">Monthly Revenue Range</label>
                     <select id="revenue" name="revenue" value={formData.revenue} onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white border-2 border-[#191A23] text-[#191A23] rounded-2xl text-xs font-bold focus:outline-none focus:bg-[#B9FF66]/10 transition-all"
+                      className="w-full px-4 py-3 bg-white border border-[#E5E7EB] text-[#131A22] rounded-2xl text-xs font-bold focus:outline-none focus:border-[#FF9900] focus:ring-1 focus:ring-[#FF9900] transition-all"
                     >
                       <option value="">Select range</option>
                       {revenueRanges.map(r => <option key={r} value={r}>{r}</option>)}
@@ -217,12 +217,12 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-xs font-heading font-extrabold text-[#191A23] mb-1.5 uppercase tracking-wider">Describe Your Growth Goals *</label>
+                  <label htmlFor="message" className="block text-xs font-heading font-extrabold text-[#131A22] mb-1.5 uppercase tracking-wider">Describe Your Growth Goals *</label>
                   <textarea id="message" name="message" rows={4} value={formData.message} onChange={handleChange}
                     placeholder="Describe your current catalog challenges and target goals..."
-                    className={`w-full px-4 py-3 bg-white border-2 rounded-2xl text-[#191A23] text-xs font-bold placeholder-slate-400 focus:outline-none focus:bg-[#B9FF66]/10 transition-all resize-none ${errors.message ? 'border-red-500' : 'border-[#191A23]'}`}
+                    className={`w-full px-4 py-3 bg-white border rounded-2xl text-[#131A22] text-xs font-bold placeholder-[#5F6368]/60 focus:outline-none focus:border-[#FF9900] focus:ring-1 focus:ring-[#FF9900] transition-all resize-none ${errors.message ? 'border-[#DC2626]' : 'border-[#E5E7EB]'}`}
                   />
-                  {errors.message && <p className="text-red-500 text-xs mt-1 font-bold">{errors.message}</p>}
+                  {errors.message && <p className="text-[#DC2626] text-xs mt-1 font-bold">{errors.message}</p>}
                 </div>
 
                 <Button type="submit" variant="primary" size="lg" disabled={status === 'loading'} className="w-full justify-center gap-2">
@@ -233,7 +233,7 @@ export default function ContactPage() {
                   )}
                 </Button>
 
-                <p className="text-[11px] text-[#666666] font-medium text-center">
+                <p className="text-[11px] text-[#5F6368] font-medium text-center">
                   By submitting, you agree to be contacted by our team. We never share your data.
                 </p>
               </form>
