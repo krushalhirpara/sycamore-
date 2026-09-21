@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { navigationData } from '@/data/navigation';
 import ArrowButton from '@/components/ui/ArrowButton';
+import { Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -56,6 +57,20 @@ export default function Footer() {
             <p className="text-xs text-[#D1D5DB] leading-relaxed font-medium">
               Certified Amazon SPN & Flipkart accredited growth agency delivering data-driven account scaling and PPC optimization.
             </p>
+
+            <div className="pt-2 space-y-2">
+              <a
+                href="mailto:contact@sycamoreeastspn.com"
+                className="flex items-center gap-2 text-xs font-medium text-[#D1D5DB] hover:text-[#FF9900] transition-colors no-underline"
+              >
+                <Mail size={14} className="text-[#FF9900] shrink-0" />
+                <span>contact@sycamoreeastspn.com</span>
+              </a>
+              <div className="flex items-center gap-2 text-xs font-medium text-[#D1D5DB]/80">
+                <MapPin size={14} className="text-[#FF9900] shrink-0" />
+                <span>Ahmedabad, Gujarat</span>
+              </div>
+            </div>
           </div>
 
           {/* Amazon Services */}

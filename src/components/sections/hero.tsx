@@ -26,9 +26,9 @@ export default function Hero() {
             </div>
 
             {/* H1 Headline */}
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#131A22] leading-none">
-              Grow Your Brand.{' '}
-              <span className="brand-label">
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[2.85rem] xl:text-[3.25rem] font-extrabold tracking-tight text-[#131A22] leading-[1.2]">
+              <span className="block text-[#131A22]">Grow Your Brand.</span>
+              <span className="inline-block mt-2 px-4 py-1.5 sm:px-5 sm:py-2 rounded-2xl sm:rounded-full bg-[#FFF4E5] border-2 border-[#FF9900] text-[#131A22] shadow-xs">
                 Scale Your Marketplace.
               </span>
             </h1>

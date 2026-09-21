@@ -121,7 +121,7 @@ export default async function ServicePage({ params }: PageProps) {
                 <span className="text-xs font-heading font-black uppercase tracking-wider bg-[#FF9900] text-[#131A22] px-3 py-1 rounded">
                   Sycamore East SPN Protocol
                 </span>
-                <h3 className="font-heading font-extrabold text-xl text-white">{service.title}</h3>
+                <h3 className="font-heading font-extrabold text-xl text-white" style={{ color: '#FFFFFF' }}>{service.title}</h3>
               </div>
             </div>
           </div>

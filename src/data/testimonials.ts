@@ -4,7 +4,7 @@ import { TestimonialData } from '@/types';
 export const testimonialsData: TestimonialData[] = [
   {
     id: 't1',
-    clientName: 'Christopher Smith',
+    clientName: 'Chirag Patel',
     company: 'Near Wellness',
     role: 'Brand Director',
     testimonialText: 'Partnering with Sycamore was a turning point for our brand. Their marketplace PPC strategies reduced our ACoS by 38% and significantly improved our organic rankings.',
@@ -12,7 +12,7 @@ export const testimonialsData: TestimonialData[] = [
   },
   {
     id: 't2',
-    clientName: 'Sarah Jenkins',
+    clientName: 'Sneha Shah',
     company: 'Lumina Home',
     role: 'Founder & CEO',
     testimonialText: 'Their operational support on Amazon is unmatched. We saved hours of case logs management, and listing updates are handled in hours instead of days.',

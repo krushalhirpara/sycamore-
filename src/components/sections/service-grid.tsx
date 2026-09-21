@@ -62,6 +62,7 @@ export default function ServiceGrid() {
                         className={`font-heading font-extrabold text-2xl md:text-3xl leading-snug tracking-tight ${
                           isDark ? 'text-white' : 'text-[#131A22]'
                         }`}
+                        style={{ color: isDark ? '#FFFFFF' : '#131A22' }}
                       >
                         {service.title}
                       </h3>
@@ -73,8 +74,13 @@ export default function ServiceGrid() {
 
                   <p
                     className={`text-xs md:text-sm font-medium leading-relaxed my-6 ${
-                      isDark ? 'text-white/80' : 'text-[#5F6368]'
+                      isDark
+                        ? 'text-white/90'
+                        : isLime
+                        ? 'text-white font-medium'
+                        : 'text-[#5F6368]'
                     }`}
+                    style={{ color: isDark ? 'rgba(255, 255, 255, 0.9)' : isLime ? '#FFFFFF' : '#5F6368' }}
                   >
                     {service.shortDescription}
                   </p>

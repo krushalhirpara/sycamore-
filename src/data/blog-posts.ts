@@ -24,7 +24,7 @@ The A10 algorithm is Amazon\'s internal search logic designed to display product
 *   **Build Storefront Backlinks:** Drive high-intent traffic directly to your Brand Store to boost catalog authority.
     `,
     author: {
-      name: 'Christopher Smith',
+      name: 'Chirag Patel',
       role: 'Head of Marketplace SEO',
       avatarUrl: '/images/authors/chris.jpg'
     },
@@ -87,7 +87,7 @@ Amazon DSP is a programmatic console that lets you purchase display, video, and 
 *   **Product Launch Scaling:** Use DSP to drive awareness and review counts for new product launches.
     `,
     author: {
-      name: 'Sarah Jenkins',
+      name: 'Sneha Shah',
       role: 'Director of Advertising',
       avatarUrl: '/images/authors/sarah.jpg'
     },

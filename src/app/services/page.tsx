@@ -50,7 +50,7 @@ export default function ServicesIndexPage() {
                       {categoryServices.length} Capabilities
                     </span>
                   </div>
-                  <h2 className="font-heading font-extrabold text-2xl md:text-3xl text-white">
+                  <h2 className="font-heading font-extrabold text-2xl md:text-3xl text-white" style={{ color: '#FFFFFF' }}>
                     {cat.title}
                   </h2>
                   <p className="text-xs md:text-sm text-white/80 font-medium">
@@ -65,33 +65,42 @@ export default function ServicesIndexPage() {
 
               {/* Service Cards Grid inside Category */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {categoryServices.map((service, i) => (
-                  <Link
-                    key={service.slug}
-                    href={`/services/${service.slug}`}
-                    className="no-underline group block"
-                    data-cursor="explore"
-                  >
-                    <Card
-                      variant={isEven ? (i % 2 === 0 ? 'white' : 'glass-light') : (i % 2 === 0 ? 'lime' : 'white')}
-                      className="h-full flex flex-col justify-between p-6"
-                    >
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                          <span className="text-[10px] font-heading font-black text-[#5F6368]">
-                            0{i + 1}
-                          </span>
-                          <ArrowButton variant="dark" size="sm" diagonal />
-                        </div>
-                        
-                        <h3 className="font-heading font-extrabold text-lg text-[#131A22] group-hover:underline">
-                          {service.title}
-                        </h3>
+                {categoryServices.map((service, i) => {
+                  const cardVariant = isEven ? (i % 2 === 0 ? 'white' : 'glass-light') : (i % 2 === 0 ? 'lime' : 'white');
+                  const isLime = cardVariant === 'lime';
 
-                        <p className="text-xs font-medium text-[#5F6368] line-clamp-3 leading-relaxed">
-                          {service.shortDescription}
-                        </p>
-                      </div>
+                  return (
+                    <Link
+                      key={service.slug}
+                      href={`/services/${service.slug}`}
+                      className="no-underline group block"
+                      data-cursor="explore"
+                    >
+                        <Card
+                          variant={cardVariant}
+                          className="h-full flex flex-col justify-between p-6"
+                        >
+                          <div className="space-y-3">
+                            <div className="flex items-center justify-between">
+                              <span className="text-[10px] font-heading font-black text-[#5F6368]">
+                                0{i + 1}
+                              </span>
+                              <ArrowButton variant="dark" size="sm" diagonal />
+                            </div>
+                            
+                            <h3 className="font-heading font-extrabold text-lg text-[#131A22] group-hover:underline">
+                              {service.title}
+                            </h3>
+
+                            <p
+                              className={`text-xs font-medium line-clamp-3 leading-relaxed ${
+                                isLime ? 'text-white' : 'text-[#5F6368]'
+                              }`}
+                              style={{ color: isLime ? '#FFFFFF' : '#5F6368' }}
+                            >
+                              {service.shortDescription}
+                            </p>
+                          </div>
 
                       <div className="pt-4 border-t border-[#E5E7EB]/10 mt-4 flex items-center justify-between">
                         <span className="text-[10px] font-heading font-black uppercase text-[#131A22]">
@@ -101,7 +110,8 @@ export default function ServicesIndexPage() {
                       </div>
                     </Card>
                   </Link>
-                ))}
+                );
+              })}
               </div>
             </div>
           );

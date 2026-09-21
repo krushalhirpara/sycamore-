@@ -12,7 +12,7 @@ export const statisticsData: StatisticData[] = [
   {
     id: 'revenue',
     label: 'Ad Revenue Managed',
-    value: 85,
+    value: 16,
     suffix: 'Cr+',
     description: 'Profitable sales generated for our brand partners globally.'
   },

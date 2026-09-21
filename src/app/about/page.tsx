@@ -38,22 +38,22 @@ const values = [
 
 const teamPlaceholders = [
   {
-    name: 'Rajesh Kumar',
+    name: 'Karishma Rajput',
     role: 'Head of Marketplace Operations',
     bio: '8+ years managing Amazon Seller Central & Vendor accounts across electronics, fashion, and beauty categories.',
-    initials: 'RK',
+    initials: 'KR',
   },
   {
-    name: 'Priya Sharma',
+    name: 'Urvesh Parate',
     role: 'Lead Amazon & Flipkart PPC Strategist',
     bio: 'Specialist in algorithmic Sponsored Ads, DSP media buy, and conversion rate optimization with over ₹50Cr ad spend managed.',
-    initials: 'PS',
+    initials: 'UP',
   },
   {
-    name: 'Ankit Mehta',
+    name: 'Hardika',
     role: 'Catalog & SEO Director',
     bio: 'Expert in A10 search algorithm indexing, backend keyword architecture, and high-converting A+ content design.',
-    initials: 'AM',
+    initials: 'H',
   },
 ];
 
@@ -109,7 +109,7 @@ export default function AboutPage() {
             <span className="text-xs font-heading font-black uppercase tracking-wider bg-[#FF9900] text-[#131A22] px-2.5 py-1 rounded">
               Our Track Record
             </span>
-            <h2 className="font-heading font-extrabold text-2xl md:text-3xl text-white">
+            <h2 className="font-heading font-extrabold text-2xl md:text-3xl text-white" style={{ color: '#FFFFFF' }}>
               6+ Years of Marketplace Dominance
             </h2>
             <div className="grid grid-cols-2 gap-6 pt-4">
@@ -118,8 +118,8 @@ export default function AboutPage() {
                 <p className="text-xs text-white/70 font-semibold">Active Brands Managed</p>
               </div>
               <div className="space-y-1">
-                <p className="font-heading font-black text-4xl text-[#FF9900]">₹85Cr+</p>
-                <p className="text-xs text-white/70 font-semibold">Annual Marketplace GMV</p>
+                <p className="font-heading font-black text-4xl text-[#FF9900]">₹16Cr+</p>
+                <p className="text-xs text-white/70 font-semibold">Annual Marketplace GMS</p>
               </div>
             </div>
           </Card>

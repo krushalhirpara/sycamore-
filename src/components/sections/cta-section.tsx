@@ -10,7 +10,7 @@ export default function CTASection() {
     <section className="py-20 md:py-28 w-full bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="bg-[#131A22] rounded-[36px] border border-[#232F3E] p-8 md:p-16 shadow-premium relative overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="bg-[#131A22] text-white rounded-[36px] border border-[#232F3E] p-8 md:p-16 shadow-premium relative overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           {/* Subtle Orange Radial Ambient Glow */}
           <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#FF9900]/10 rounded-full blur-3xl pointer-events-none" />
@@ -22,7 +22,10 @@ export default function CTASection() {
               Let&apos;s Scale Your Marketplace Revenues
             </div>
 
-            <h2 className="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight">
+            <h2
+              className="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight"
+              style={{ color: '#FFFFFF' }}
+            >
               Ready to Accelerate Your Amazon & Flipkart Sales?
             </h2>
 
