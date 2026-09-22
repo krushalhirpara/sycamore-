@@ -121,7 +121,7 @@ export default function ContactPage() {
                 Accreditation & Badges
               </span>
               <div className="flex flex-wrap gap-2 pt-1">
-                {['Amazon SPN Certified', 'Flipkart Preferred Partner', '6+ Years Experience'].map((cert) => (
+                {['Amazon SPN Certified', 'Flipkart Preferred Partner', '2+ Years Experience'].map((cert) => (
                   <span key={cert} className="text-[10px] font-heading font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-[#FF9900] text-[#131A22]">
                     {cert}
                   </span>

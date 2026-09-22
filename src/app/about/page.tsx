@@ -27,7 +27,7 @@ const values = [
   {
     icon: <Award size={24} className="text-[#131A22]" />,
     title: 'Marketplace Accreditation',
-    description: 'Our team comprises certified Amazon SPN specialists and Flipkart-accredited partners with 6+ years of hands-on category management.',
+    description: 'Our team comprises certified Amazon SPN specialists and Flipkart-accredited partners with 2+ years of hands-on category management.',
   },
   {
     icon: <Rocket size={24} className="text-[#131A22]" />,
@@ -110,7 +110,7 @@ export default function AboutPage() {
               Our Track Record
             </span>
             <h2 className="font-heading font-extrabold text-2xl md:text-3xl text-white" style={{ color: '#FFFFFF' }}>
-              6+ Years of Marketplace Dominance
+              2+ Years of Marketplace Dominance
             </h2>
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="space-y-1">

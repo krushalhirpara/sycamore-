@@ -26,7 +26,7 @@ export const statisticsData: StatisticData[] = [
   {
     id: 'experience',
     label: 'Years of Experience',
-    value: 6,
+    value: 2,
     suffix: '+',
     description: 'Years building first-party brands and agency operations.'
   }
